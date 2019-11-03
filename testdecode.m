@@ -18,4 +18,5 @@ t=@int8;
 for I=64:127
     r = [r; positdecode(t(I),N,0)];
 end
-r = struct2table(r)
+r = struct2table(r);
+r = sortrows(r,'value');
